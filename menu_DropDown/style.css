@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#menu ul{
+    margin: 0;
+    padding: 0;
+    
+}
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    position: relative;
+    background: green;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+}
+#menu ul li a{
+    text-decoration: none;
+}
+/* Hiệu ứng chạm chuột thanh menu */
+#menu ul li:hover{
+    background: white;
+}
+/* Ẩn menu con */
+.dropdow{
+    display: none;
+    position: absolute;         /* cho menu con xuất hiện bên trong menu mẹ */
+    text-align: center;
+}
+/* Hiện menu con khi chạm menu mẹ */
+#menu ul li:hover .dropdow{
+    display: block;
+}
+/* khoảng cách menu con */
+.dropdow li{
+    margin: 5px 0px 5px -5px;
+}
+
